@@ -14,6 +14,7 @@ import java.math.BigDecimal;
 public class Job {
     @Id
     @Column(name = "jobId", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Size(max = 255)
@@ -25,5 +26,8 @@ public class Job {
 
     @Column(name = "maxSalary", precision = 10, scale = 2)
     private BigDecimal maxSalary;
+
+    @Column(name = "isAvailable")
+    private boolean isAvailable;
 
 }

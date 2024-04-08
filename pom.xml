@@ -89,6 +89,11 @@
             <artifactId>hibernate-validator</artifactId>
             <version>7.0.5.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.glassfish.expressly</groupId>
+            <artifactId>expressly</artifactId>
+            <version>5.0.0</version>
+        </dependency>
         <!-- the following dependency for lombok  -->
         <dependency>
             <groupId>org.projectlombok</groupId>

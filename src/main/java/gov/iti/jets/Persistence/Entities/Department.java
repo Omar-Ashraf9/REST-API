@@ -14,6 +14,7 @@ import java.util.Date;
 public class Department {
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Size(max = 45)

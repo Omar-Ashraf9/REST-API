@@ -10,23 +10,11 @@ import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
+import static jakarta.persistence.Persistence.createEntityManagerFactory;
+
 public class DB {
-    private static final EntityManagerFactory emf;
+    private static final EntityManagerFactory emf = createEntityManagerFactory("rest");
 
-    static
-    {
-        HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/hr");
-        dataSource.setUsername("root");
-        dataSource.setPassword("");
-
-        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setMaximumPoolSize(15);
-
-        Map<String, Object> properties = new HashMap<>();
-        properties.put("jakarta.persistence.nonJtaDataSource", dataSource);
-        emf = Persistence.createEntityManagerFactory("rest", properties);
-    }
     private DB() {}
     public static <R> R doInTransaction(Function<EntityManager, R> returningTransactionFunction)
     {

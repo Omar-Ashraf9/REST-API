@@ -19,6 +19,12 @@ public abstract class GenericRepo<T,ID extends Serializable> implements GenericR
         return Optional.of(entityManager.createQuery( "from " + persistentClass.getName(), persistentClass )
                 .getResultList());
     }
+    public Optional<List<T>> findAll(int offset, int limit) {
+        return Optional.of(entityManager.createQuery( "from " + persistentClass.getName(), persistentClass )
+                .setFirstResult(offset)
+                .setMaxResults(limit)
+                .getResultList());
+    }
 
     public Optional<T> findById(ID id) {
         return Optional.of(entityManager.find(persistentClass,id));

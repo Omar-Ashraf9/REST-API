@@ -12,6 +12,7 @@ import lombok.Setter;
 public class Project {
     @Id
     @Column(name = "projectId", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Size(max = 45)

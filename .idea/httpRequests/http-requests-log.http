@@ -1,0 +1,10 @@
+GET http://localhost:9090/HRREST/webapi/v1/jobs/10
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-04-07T220732.500.html
+
+###
+
