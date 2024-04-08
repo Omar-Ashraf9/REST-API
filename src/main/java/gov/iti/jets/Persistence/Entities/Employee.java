@@ -61,8 +61,9 @@ public class Employee {
 
     @Transient
     private String managerName;
+
     @PostLoad
-    public void setManagerName(){
+    public void setManagerInfo(){
         if(manager != null){
             managerName = manager.getFirstName() + " " + manager.getLastName();
         }

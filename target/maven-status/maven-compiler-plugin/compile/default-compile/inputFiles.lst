@@ -1,3 +1,4 @@
+E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Services\DepartmentService.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Persistence\Repository\JobRepo.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Persistence\DB.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Services\JobService.java
@@ -22,6 +23,8 @@ E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Persistence\En
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Models\Mappers\DepartmentMapper.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Persistence\Repository\EmployeeRepo.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Models\DTO\JobDto.java
+E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Controllers\EmployeeResource.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Persistence\Repository\DepartmentRepo.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Persistence\Entities\WorksOn.java
+E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Controllers\DepartmentResource.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Models\Mappers\JobMapper.java

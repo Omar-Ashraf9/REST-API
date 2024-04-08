@@ -7,7 +7,6 @@ import gov.iti.jets.Persistence.Entities.Department;
 import gov.iti.jets.Persistence.Entities.Employee;
 import gov.iti.jets.Persistence.Entities.Job;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.Date;
@@ -15,7 +14,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-08T15:43:52+0200",
+    date = "2024-04-09T00:03:23+0200",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.9 (Oracle Corporation)"
 )
 public class EmployeeMapperImpl implements EmployeeMapper {
@@ -145,6 +144,9 @@ public class EmployeeMapperImpl implements EmployeeMapper {
         if ( departmentDto.getManagerStartDate() != null ) {
             department.setManagerStartDate( Date.from( departmentDto.getManagerStartDate().atStartOfDay( ZoneOffset.UTC ).toInstant() ) );
         }
+        department.setAvailable( departmentDto.isAvailable() );
+        department.setManagerName( departmentDto.getManagerName() );
+        department.setManagerId( departmentDto.getManagerId() );
 
         return department;
     }
@@ -170,17 +172,16 @@ public class EmployeeMapperImpl implements EmployeeMapper {
             return null;
         }
 
-        Integer id = null;
-        String departmentName = null;
-        LocalDate managerStartDate = null;
+        DepartmentDto departmentDto = new DepartmentDto();
 
-        id = department.getId();
-        departmentName = department.getDepartmentName();
+        departmentDto.setId( department.getId() );
+        departmentDto.setDepartmentName( department.getDepartmentName() );
         if ( department.getManagerStartDate() != null ) {
-            managerStartDate = LocalDateTime.ofInstant( department.getManagerStartDate().toInstant(), ZoneOffset.UTC ).toLocalDate();
+            departmentDto.setManagerStartDate( LocalDateTime.ofInstant( department.getManagerStartDate().toInstant(), ZoneOffset.UTC ).toLocalDate() );
         }
-
-        DepartmentDto departmentDto = new DepartmentDto( id, departmentName, managerStartDate );
+        departmentDto.setManagerName( department.getManagerName() );
+        departmentDto.setManagerId( department.getManagerId() );
+        departmentDto.setAvailable( department.isAvailable() );
 
         return departmentDto;
     }
@@ -214,6 +215,13 @@ public class EmployeeMapperImpl implements EmployeeMapper {
         }
         if ( departmentDto.getManagerStartDate() != null ) {
             mappingTarget.setManagerStartDate( Date.from( departmentDto.getManagerStartDate().atStartOfDay( ZoneOffset.UTC ).toInstant() ) );
+        }
+        mappingTarget.setAvailable( departmentDto.isAvailable() );
+        if ( departmentDto.getManagerName() != null ) {
+            mappingTarget.setManagerName( departmentDto.getManagerName() );
+        }
+        if ( departmentDto.getManagerId() != null ) {
+            mappingTarget.setManagerId( departmentDto.getManagerId() );
         }
     }
 

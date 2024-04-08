@@ -28,12 +28,19 @@ public class Department {
     @Column(name = "managerStartDate")
     private Date managerStartDate;
 
+    @Column(name = "isAvailable")
+    private boolean isAvailable;
+
     @Transient
     private String managerName;
+
+    @Transient
+    private Integer managerId;
     @PostLoad
     public void setManagerName(){
         if(manager != null){
             managerName = manager.getFirstName() + " " + manager.getLastName();
+            managerId = manager.getId();
         }
     }
 }

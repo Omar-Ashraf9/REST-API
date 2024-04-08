@@ -10,19 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="266796ee-07ea-4aed-8551-775715920b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/EmployeeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/DepartmentResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Services/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c86d129f-52d5-4b34-9f9f-7dc3c11db7f6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c86d129f-52d5-4b34-9f9f-7dc3c11db7f6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/DBpopulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/DBpopulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/JobResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/JobResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/DepartmentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/DepartmentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/Mappers/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/Mappers/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Department.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Controllers/JobResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Controllers/JobResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/DBpopulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/DBpopulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/DepartmentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/DepartmentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Department.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Controllers/JobResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Controllers/JobResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/DBpopulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/DBpopulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/DepartmentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/DepartmentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Department.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Job.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.java" afterDir="false" />
@@ -91,7 +108,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Rest.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Department-resource",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/ITI - EWD/Courses/Projects/REST-API/src/main/java/gov/iti/jets/Persistence/Entities",
@@ -123,20 +140,7 @@
       <recent name="gov.iti.jets.Persistence.Repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DBpopulator">
-    <configuration name="DBpopulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gov.iti.jets.DBpopulator" />
-      <module name="REST-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gov.iti.jets.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Rest" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -224,11 +228,6 @@
         </option>
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.DBpopulator" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

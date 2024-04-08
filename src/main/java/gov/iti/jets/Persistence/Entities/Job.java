@@ -27,7 +27,7 @@ public class Job {
     @Column(name = "maxSalary", precision = 10, scale = 2)
     private BigDecimal maxSalary;
 
-    @Column(name = "isAvailable", columnDefinition = "boolean default true")
+    @Column(name = "isAvailable")
     private boolean isAvailable;
 
 }

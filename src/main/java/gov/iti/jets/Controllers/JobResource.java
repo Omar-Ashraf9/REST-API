@@ -11,9 +11,6 @@ import java.util.List;
 
 @Path("/v1/jobs")
 public class JobResource {
-    public JobResource(JobService mockJobService) {
-    }
-
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllJobs(@BeanParam PaginationBean paginationBean) {
