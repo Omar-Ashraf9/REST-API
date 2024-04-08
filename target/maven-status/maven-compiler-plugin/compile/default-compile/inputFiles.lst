@@ -3,6 +3,7 @@ E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Persistence\DB
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Services\JobService.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Controllers\JobResource.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Models\Mappers\EmployeeMapper.java
+E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Controllers\Beans\PaginationBean.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Models\DTO\DepartmentDto.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Models\DTO\ProjectDto.java
 E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Persistence\Entities\WorksOnId.java

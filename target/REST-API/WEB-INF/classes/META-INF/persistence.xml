@@ -5,7 +5,11 @@
              version="3.0">
     <persistence-unit name="rest" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
+        <class>gov.iti.jets.Persistence.Entities.Job</class>
+        <class>gov.iti.jets.Persistence.Entities.Department</class>
+        <class>gov.iti.jets.Persistence.Entities.Employee</class>
+        <class>gov.iti.jets.Persistence.Entities.WorksOn</class>
+        <class>gov.iti.jets.Persistence.Entities.Project</class>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
             <property name="hibernate.connection.provider_class" value="com.zaxxer.hikari.hibernate.HikariConnectionProvider" />
@@ -14,10 +18,10 @@
             <property name="hibernate.hikari.dataSource.user" value="root" />
             <property name="hibernate.hikari.dataSource.password" value="" />
             <property name="hibernate.hikari.maximumPoolSize" value="5" />
-<!--            <property name="hibernate.show_sql" value="true" />-->
-<!--            <property name="hibernate.format_sql" value="true" />-->
-<!--            <property name="hibernate.hbm2ddl.auto" value="update" />-->
-            <!--            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>-->
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+<!--            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>-->
         </properties>
     </persistence-unit>
 </persistence>
