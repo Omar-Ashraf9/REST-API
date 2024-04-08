@@ -10,11 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="266796ee-07ea-4aed-8551-775715920b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/gov/iti/jets/Controllers/JobResourceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/JobResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/JobResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Controllers/JobResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Controllers/JobResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gov/iti/jets/Controllers/JobResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gov/iti/jets/Controllers/JobResourceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +67,7 @@
     "JUnit.JobResourceTest.testAddJob.executor": "Run",
     "JUnit.JobResourceTest.testGetAllJobs.executor": "Run",
     "JUnit.JobResourceTest.testGetJobById.executor": "Run",
+    "JUnit.JobResourceTest.testSearchJobs.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -106,71 +104,7 @@
       <recent name="gov.iti.jets.Persistence.Repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JobResourceTest.testSearchJobs">
-    <configuration name="JobResourceTest.testAddJob" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="REST-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gov.iti.jets.Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gov.iti.jets.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="gov.iti.jets.Controllers.JobResourceTest" />
-      <option name="METHOD_NAME" value="testAddJob" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JobResourceTest.testGetAllJobs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="REST-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gov.iti.jets.Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gov.iti.jets.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="gov.iti.jets.Controllers.JobResourceTest" />
-      <option name="METHOD_NAME" value="testGetAllJobs" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JobResourceTest.testGetJobById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="REST-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gov.iti.jets.Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gov.iti.jets.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="gov.iti.jets.Controllers.JobResourceTest" />
-      <option name="METHOD_NAME" value="testGetJobById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JobResourceTest.testSearchJobs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="REST-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gov.iti.jets.Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gov.iti.jets.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="gov.iti.jets.Controllers.JobResourceTest" />
-      <option name="METHOD_NAME" value="testSearchJobs" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Rest" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.18" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -258,14 +192,6 @@
         </option>
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.JobResourceTest.testSearchJobs" />
-        <item itemvalue="JUnit.JobResourceTest.testAddJob" />
-        <item itemvalue="JUnit.JobResourceTest.testGetJobById" />
-        <item itemvalue="JUnit.JobResourceTest.testGetAllJobs" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

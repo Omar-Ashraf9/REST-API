@@ -77,6 +77,5 @@ public class JobResourceTest {
 
         // Assert
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
-        // You can also assert the response body if needed
     }
 }
