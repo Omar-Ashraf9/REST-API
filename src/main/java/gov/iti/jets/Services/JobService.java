@@ -52,4 +52,26 @@ public class JobService {
             }
         });
     }
+
+    public boolean updateJob(JobDto jobDto){
+        return DB.doInTransaction(em ->{
+            JobRepo jobRepo = new JobRepo(em);
+            Job job = JobMapper.INSTANCE.toEntity(jobDto);
+            try{
+                jobRepo.update(job);
+                return true;
+            }catch (Exception e){
+                System.out.println("Error updating job: " + e.getMessage());
+                return false;
+            }
+        });
+    }
+
+    public List<JobDto> searchJobs(String jobTitle) {
+        return DB.doInTransaction(em -> {
+            JobRepo jobRepo = new JobRepo(em);
+            List<Job> jobs = jobRepo.searchJobs(jobTitle).orElse(null);
+            return JobMapper.INSTANCE.toDtoList(jobs);
+        });
+    }
 }

@@ -1,11 +1,11 @@
 package gov.iti.jets.Controllers;
 
+import gov.iti.jets.Controllers.Beans.PaginationBean;
 import gov.iti.jets.Models.DTO.JobDto;
 import gov.iti.jets.Services.JobService;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import lombok.experimental.Delegate;
 
 import java.util.List;
 
@@ -13,11 +13,11 @@ import java.util.List;
 public class JobResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllJobs(@QueryParam("offset") @DefaultValue("0") int offset, @QueryParam("limit") @DefaultValue("10") int limit) {
+    public Response getAllJobs(@BeanParam PaginationBean paginationBean) {
         JobService jobService = new JobService();
-        List<JobDto> jobs = jobService.getAllJobs(offset, limit);
+        List<JobDto> jobs = jobService.getAllJobs(paginationBean.getOffset(), paginationBean.getLimit());
         if (jobs == null || jobs.isEmpty()) {
-            return Response.status(Response.Status.NOT_FOUND).build();
+            return Response.status(Response.Status.NOT_FOUND).entity("No jobs found").build();
         }
         return Response.ok(jobs).build();
     }
@@ -29,7 +29,7 @@ public class JobResource {
         JobService jobService = new JobService();
         JobDto job = jobService.getJobById(id);
         if (job == null) {
-            return Response.status(Response.Status.NOT_FOUND).build();
+            return Response.status(Response.Status.NOT_FOUND).entity("No job found with the provided ID").build();
         }
         return Response.ok(job).build();
     }
@@ -54,4 +54,30 @@ public class JobResource {
         return Response.status(Response.Status.NO_CONTENT).build();
     }
 
+    @PUT
+    @Path("/{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updateJob(@PathParam("id") Integer id, JobDto job) {
+        JobService jobService = new JobService();
+        job.setId(id);
+        boolean isUpdated = jobService.updateJob(job);
+        if (isUpdated) {
+            return Response.status(Response.Status.OK).entity(job).build();
+        } else {
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("can't update this job").build();
+        }
+    }
+
+    @GET
+    @Path("/search")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response searchJobs(@QueryParam("title") String title) {
+        System.out.println("title = " + title);
+        JobService jobService = new JobService();
+        List<JobDto> jobs = jobService.searchJobs(title);
+        if (jobs == null || jobs.isEmpty()) {
+            return Response.status(Response.Status.NOT_FOUND).entity("No jobs found with this title").build();
+        }
+        return Response.ok(jobs).build();
+    }
 }

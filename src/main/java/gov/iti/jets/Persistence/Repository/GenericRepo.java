@@ -16,18 +16,18 @@ public abstract class GenericRepo<T,ID extends Serializable> implements GenericR
         this.entityManager = entityManager ;
     }
     public Optional<List<T>> findAll() {
-        return Optional.of(entityManager.createQuery( "from " + persistentClass.getName(), persistentClass )
+        return Optional.ofNullable(entityManager.createQuery( "from " + persistentClass.getName(), persistentClass )
                 .getResultList());
     }
     public Optional<List<T>> findAll(int offset, int limit) {
-        return Optional.of(entityManager.createQuery( "from " + persistentClass.getName(), persistentClass )
+        return Optional.ofNullable(entityManager.createQuery( "from " + persistentClass.getName(), persistentClass )
                 .setFirstResult(offset)
                 .setMaxResults(limit)
                 .getResultList());
     }
 
     public Optional<T> findById(ID id) {
-        return Optional.of(entityManager.find(persistentClass,id));
+        return Optional.ofNullable(entityManager.find(persistentClass,id));
     }
 
     public void create(T entity) {
@@ -35,7 +35,7 @@ public abstract class GenericRepo<T,ID extends Serializable> implements GenericR
     }
 
     public Optional<T> update(T entity) {
-        return Optional.of(entityManager.merge(entity));
+        return Optional.ofNullable(entityManager.merge(entity));
     }
 
     public void deleteById(ID id) {
