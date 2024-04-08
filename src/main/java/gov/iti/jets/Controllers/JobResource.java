@@ -11,6 +11,9 @@ import java.util.List;
 
 @Path("/v1/jobs")
 public class JobResource {
+    public JobResource(JobService mockJobService) {
+    }
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllJobs(@BeanParam PaginationBean paginationBean) {
@@ -72,7 +75,6 @@ public class JobResource {
     @Path("/search")
     @Produces(MediaType.APPLICATION_JSON)
     public Response searchJobs(@QueryParam("title") String title) {
-        System.out.println("title = " + title);
         JobService jobService = new JobService();
         List<JobDto> jobs = jobService.searchJobs(title);
         if (jobs == null || jobs.isEmpty()) {
