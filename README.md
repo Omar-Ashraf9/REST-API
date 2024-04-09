@@ -28,6 +28,10 @@ This repository contains a RESTful API for managing employee, department, projec
   - `DELETE /jobs/{id}`: Delete a job position by ID.
   - `GET /jobs/search`: Search for job positions based on specific criteria.
 
+## API Documentation :memo:
+https://documenter.getpostman.com/view/10820115/2sA3BgAFU9
+
+
 ## Technologies Used 🛠️
 ![Java JDK](https://img.shields.io/badge/Java%20JDK-17-orange?style=for-the-badge&logo=java)
 ![Jakarta EE](https://img.shields.io/badge/Jakarta%20EE-9-blueviolet?style=for-the-badge&logo=eclipse&logoColor=white)
