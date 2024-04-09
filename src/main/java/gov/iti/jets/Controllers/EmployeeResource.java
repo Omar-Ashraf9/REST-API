@@ -2,10 +2,8 @@ package gov.iti.jets.Controllers;
 
 import gov.iti.jets.Controllers.Beans.PaginationBean;
 import gov.iti.jets.Models.DTO.EmployeeDto;
-import jakarta.ws.rs.BeanParam;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
+import gov.iti.jets.Services.EmployeeService;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
@@ -24,4 +22,31 @@ public class EmployeeResource {
         }
         return Response.ok(employees).build();
     }
+
+    @GET
+    @Path("/managers")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getManagers() {
+        EmployeeService employeeService = new EmployeeService();
+        List<EmployeeDto> managers = employeeService.getManagers();
+        if (managers == null || managers.isEmpty()) {
+            return Response.status(Response.Status.NOT_FOUND).entity("No managers found").build();
+        }
+        return Response.ok(managers).build();
+    }
+
+    @GET
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getEmployeeById(@PathParam("id") Integer id) {
+        EmployeeService employeeService = new EmployeeService();
+        EmployeeDto employee = employeeService.getEmployeeById(id);
+        if (employee == null) {
+            return Response.status(Response.Status.NOT_FOUND).entity("No employee found with the provided ID").build();
+        }
+        return Response.ok(employee).build();
+    }
+
+
+
 }

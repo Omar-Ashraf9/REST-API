@@ -70,10 +70,11 @@ public class Employee {
 
     @PostLoad
     public void setInfo(){
-        if(manager != null){
+        if(manager != null)
             managerName = manager.getFirstName() + " " + manager.getLastName();
+        if(department != null)
             departmentName = department.getDepartmentName();
+        if(job != null)
             jobTitle = job.getJobTitle();
-        }
     }
 }

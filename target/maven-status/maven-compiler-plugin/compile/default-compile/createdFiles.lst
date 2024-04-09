@@ -1,5 +1,6 @@
 gov\iti\jets\Persistence\Repository\GenericRepoInt.class
 gov\iti\jets\Persistence\Entities\WorksOn.class
+gov\iti\jets\Services\EmployeeService.class
 gov\iti\jets\Controllers\Beans\PaginationBean.class
 gov\iti\jets\Persistence\DB.class
 gov\iti\jets\Models\Mappers\JobMapperImpl.class

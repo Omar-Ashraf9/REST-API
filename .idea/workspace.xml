@@ -10,39 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="266796ee-07ea-4aed-8551-775715920b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/ProjectResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Services/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Services/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c86d129f-52d5-4b34-9f9f-7dc3c11db7f6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c86d129f-52d5-4b34-9f9f-7dc3c11db7f6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/DepartmentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/DepartmentResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/EmployeeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/EmployeeResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/JobResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/JobResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/EmployeeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/ProjectDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/ProjectDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/Mappers/ProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/Mappers/ProjectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/Mappers/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/Mappers/EmployeeMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Entities/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Services/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Services/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Controllers/JobResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Controllers/JobResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/ProjectDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/ProjectDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Repository/EmployeeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Persistence/Repository/EmployeeRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/EmployeeDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/EmployeeDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/EmployeeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/EmployeeMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/ProjectMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/ProjectMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/Mappers/ProjectMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Controllers/JobResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Controllers/JobResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/ProjectDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/ProjectDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/ProjectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/ProjectMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/Mappers/ProjectMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Persistence/Entities/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Entities/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Repository/EmployeeRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Persistence/Repository/EmployeeRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/JobMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/JobMapperImpl.java" afterDir="false" />
@@ -255,7 +235,7 @@
       <workItem from="1712501880416" duration="862000" />
       <workItem from="1712518769683" duration="9489000" />
       <workItem from="1712622058245" duration="6140000" />
-      <workItem from="1712632560902" duration="936000" />
+      <workItem from="1712632560902" duration="4964000" />
     </task>
     <servers />
   </component>
