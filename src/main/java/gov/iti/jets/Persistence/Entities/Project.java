@@ -22,4 +22,23 @@ public class Project {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "departmentId")
     private Department department;
+
+    @Column(name = "isAvailable")
+    private boolean isAvailable;
+
+    @Transient
+    private String departmentName;
+
+    @Transient
+    private Integer departmentId;
+
+    @PostLoad
+    public void setDepartmentInfo(){
+        if(department != null)
+        {
+            departmentName = department.getDepartmentName();
+            departmentId = department.getId();
+        }
+
+    }
 }

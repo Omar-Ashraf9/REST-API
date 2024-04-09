@@ -28,4 +28,6 @@ public class EmployeeDto implements Serializable {
     Integer vacationBalance;
     JobDto job;
     String managerName;
+    String departmentName;
+    String jobTitle;
 }

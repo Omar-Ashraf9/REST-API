@@ -43,7 +43,7 @@ public class DepartmentResource {
         if (isAdded) {
             return Response.status(Response.Status.CREATED).entity(department).build();
         } else {
-            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("can't add this department").build();
+            return Response.status(Response.Status.BAD_REQUEST).entity("can't add this department").build();
         }
     }
 
@@ -56,7 +56,20 @@ public class DepartmentResource {
         if (isAssigned) {
             return Response.status(Response.Status.OK).entity("Manager assigned to the department successfully").build();
         } else {
-            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Failed to assign manager to the department").build();
+            return Response.status(Response.Status.BAD_REQUEST).entity("Failed to assign manager to the department").build();
+        }
+    }
+
+    @PUT
+    @Path("/{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updateDepartmentName(@PathParam("id") Integer id, DepartmentDto department) {
+        DepartmentService departmentService = new DepartmentService();
+        boolean isUpdated = departmentService.updateDepartmentName(id, department);
+        if (isUpdated) {
+            return Response.status(Response.Status.OK).entity("Department name updated successfully").build();
+        } else {
+            return Response.status(Response.Status.BAD_REQUEST).entity("Failed to update department name").build();
         }
     }
 

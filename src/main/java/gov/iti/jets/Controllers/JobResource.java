@@ -42,7 +42,7 @@ public class JobResource {
         if (isAdded) {
             return Response.status(Response.Status.CREATED).entity(job).build();
         } else {
-            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("can't add this job").build();
+            return Response.status(Response.Status.BAD_REQUEST).entity("can't add this job").build();
         }
     }
 
@@ -64,7 +64,7 @@ public class JobResource {
         if (isUpdated) {
             return Response.status(Response.Status.OK).entity(job).build();
         } else {
-            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("can't update this job").build();
+            return Response.status(Response.Status.BAD_REQUEST).entity("can't update this job").build();
         }
     }
 

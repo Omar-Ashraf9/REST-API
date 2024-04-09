@@ -74,6 +74,20 @@ public class DepartmentService {
         });
     }
 
+
+    public boolean updateDepartmentName(Integer id, DepartmentDto departmentDto) {
+        return DB.doInTransaction(em -> {
+            DepartmentRepo departmentRepo = new DepartmentRepo(em);
+            Department department = departmentRepo.findById(id).orElse(null);
+            if (department != null) {
+                department.setDepartmentName(departmentDto.getDepartmentName());
+                departmentRepo.update(department);
+                return true;
+            } else {
+                return false;
+            }
+        });
+    }
     public java.util.Date map(LocalDate localDate) {
         return localDate != null ? java.util.Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant()) : null;
     }

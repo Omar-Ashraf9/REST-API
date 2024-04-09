@@ -1,19 +1,17 @@
 package gov.iti.jets.Models.Mappers;
 
-import gov.iti.jets.Models.DTO.DepartmentDto;
 import gov.iti.jets.Models.DTO.ProjectDto;
-import gov.iti.jets.Persistence.Entities.Department;
 import gov.iti.jets.Persistence.Entities.Project;
+import java.util.ArrayList;
+import java.util.List;
 import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-09T00:03:22+0200",
+    date = "2024-04-09T03:54:52+0200",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.9 (Oracle Corporation)"
 )
 public class ProjectMapperImpl implements ProjectMapper {
-
-    private final DepartmentMapper departmentMapper = DepartmentMapper.INSTANCE;
 
     @Override
     public Project toEntity(ProjectDto projectDto) {
@@ -25,7 +23,9 @@ public class ProjectMapperImpl implements ProjectMapper {
 
         project.setId( projectDto.getId() );
         project.setProjectName( projectDto.getProjectName() );
-        project.setDepartment( departmentMapper.toEntity( projectDto.getDepartment() ) );
+        project.setAvailable( projectDto.isAvailable() );
+        project.setDepartmentName( projectDto.getDepartmentName() );
+        project.setDepartmentId( projectDto.getDepartmentId() );
 
         return project;
     }
@@ -36,17 +36,29 @@ public class ProjectMapperImpl implements ProjectMapper {
             return null;
         }
 
-        Integer id = null;
-        String projectName = null;
-        DepartmentDto department = null;
+        ProjectDto projectDto = new ProjectDto();
 
-        id = project.getId();
-        projectName = project.getProjectName();
-        department = departmentMapper.toDto( project.getDepartment() );
-
-        ProjectDto projectDto = new ProjectDto( id, projectName, department );
+        projectDto.setId( project.getId() );
+        projectDto.setProjectName( project.getProjectName() );
+        projectDto.setDepartmentName( project.getDepartmentName() );
+        projectDto.setDepartmentId( project.getDepartmentId() );
+        projectDto.setAvailable( project.isAvailable() );
 
         return projectDto;
+    }
+
+    @Override
+    public List<ProjectDto> toDtoList(List<Project> projects) {
+        if ( projects == null ) {
+            return null;
+        }
+
+        List<ProjectDto> list = new ArrayList<ProjectDto>( projects.size() );
+        for ( Project project : projects ) {
+            list.add( toDto( project ) );
+        }
+
+        return list;
     }
 
     @Override
@@ -61,11 +73,12 @@ public class ProjectMapperImpl implements ProjectMapper {
         if ( projectDto.getProjectName() != null ) {
             project.setProjectName( projectDto.getProjectName() );
         }
-        if ( projectDto.getDepartment() != null ) {
-            if ( project.getDepartment() == null ) {
-                project.setDepartment( new Department() );
-            }
-            departmentMapper.partialUpdate( projectDto.getDepartment(), project.getDepartment() );
+        project.setAvailable( projectDto.isAvailable() );
+        if ( projectDto.getDepartmentName() != null ) {
+            project.setDepartmentName( projectDto.getDepartmentName() );
+        }
+        if ( projectDto.getDepartmentId() != null ) {
+            project.setDepartmentId( projectDto.getDepartmentId() );
         }
 
         return project;

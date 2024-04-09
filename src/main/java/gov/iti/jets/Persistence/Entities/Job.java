@@ -18,7 +18,7 @@ public class Job {
     private Integer id;
 
     @Size(max = 255)
-    @Column(name = "jobTitle")
+    @Column(name = "jobTitle", unique = true)
     private String jobTitle;
 
     @Column(name = "minSalary", precision = 10, scale = 2)
