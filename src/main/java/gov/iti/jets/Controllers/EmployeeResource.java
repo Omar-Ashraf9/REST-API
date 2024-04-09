@@ -1,6 +1,5 @@
 package gov.iti.jets.Controllers;
 
-import com.fasterxml.jackson.annotation.JsonView;
 import gov.iti.jets.Controllers.Beans.PaginationBean;
 
 import gov.iti.jets.Models.DTO.EmployeeDto;
@@ -8,7 +7,6 @@ import gov.iti.jets.Models.DTO.EmployeeProjectAssignmentDto;
 import gov.iti.jets.Models.DTO.EmployeeVacationRequestDto;
 import gov.iti.jets.Models.DTO.ProjectDto;
 import gov.iti.jets.Services.EmployeeService;
-import gov.iti.jets.Views.View;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
