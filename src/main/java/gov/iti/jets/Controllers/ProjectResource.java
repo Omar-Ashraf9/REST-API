@@ -29,9 +29,6 @@ public class ProjectResource {
     public Response getProjectById(@PathParam("id") Integer id) {
         ProjectService projectService = new ProjectService();
         ProjectDto project = projectService.getProjectById(id);
-        if (project == null) {
-            return Response.status(Response.Status.NOT_FOUND).entity("No project found with the provided ID").build();
-        }
         return Response.ok(project).build();
     }
 

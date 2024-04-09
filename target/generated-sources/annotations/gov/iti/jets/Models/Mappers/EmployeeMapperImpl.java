@@ -2,18 +2,13 @@ package gov.iti.jets.Models.Mappers;
 
 import gov.iti.jets.Models.DTO.EmployeeDto;
 import gov.iti.jets.Persistence.Entities.Employee;
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-09T06:11:42+0200",
+    date = "2024-04-09T17:56:55+0200",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.9 (Oracle Corporation)"
 )
 public class EmployeeMapperImpl implements EmployeeMapper {
@@ -29,9 +24,7 @@ public class EmployeeMapperImpl implements EmployeeMapper {
         employee.setId( employeeDto.getId() );
         employee.setFirstName( employeeDto.getFirstName() );
         employee.setLastName( employeeDto.getLastName() );
-        if ( employeeDto.getBirthDate() != null ) {
-            employee.setBirthDate( Date.from( employeeDto.getBirthDate().atStartOfDay( ZoneOffset.UTC ).toInstant() ) );
-        }
+        employee.setBirthDate( employeeDto.getBirthDate() );
         employee.setAddress( employeeDto.getAddress() );
         employee.setGender( employeeDto.getGender() );
         employee.setSalary( employeeDto.getSalary() );
@@ -40,6 +33,9 @@ public class EmployeeMapperImpl implements EmployeeMapper {
         employee.setManagerName( employeeDto.getManagerName() );
         employee.setDepartmentName( employeeDto.getDepartmentName() );
         employee.setJobTitle( employeeDto.getJobTitle() );
+        employee.setManagerId( employeeDto.getManagerId() );
+        employee.setDepartmentId( employeeDto.getDepartmentId() );
+        employee.setJobId( employeeDto.getJobId() );
 
         return employee;
     }
@@ -50,35 +46,23 @@ public class EmployeeMapperImpl implements EmployeeMapper {
             return null;
         }
 
-        Integer id = null;
-        String firstName = null;
-        String lastName = null;
-        LocalDate birthDate = null;
-        String address = null;
-        String gender = null;
-        BigDecimal salary = null;
-        Integer age = null;
-        Integer vacationBalance = null;
-        String managerName = null;
-        String departmentName = null;
-        String jobTitle = null;
+        EmployeeDto employeeDto = new EmployeeDto();
 
-        id = employee.getId();
-        firstName = employee.getFirstName();
-        lastName = employee.getLastName();
-        if ( employee.getBirthDate() != null ) {
-            birthDate = LocalDateTime.ofInstant( employee.getBirthDate().toInstant(), ZoneOffset.UTC ).toLocalDate();
-        }
-        address = employee.getAddress();
-        gender = employee.getGender();
-        salary = employee.getSalary();
-        age = employee.getAge();
-        vacationBalance = employee.getVacationBalance();
-        managerName = employee.getManagerName();
-        departmentName = employee.getDepartmentName();
-        jobTitle = employee.getJobTitle();
-
-        EmployeeDto employeeDto = new EmployeeDto( id, firstName, lastName, birthDate, address, gender, salary, age, vacationBalance, managerName, departmentName, jobTitle );
+        employeeDto.setId( employee.getId() );
+        employeeDto.setFirstName( employee.getFirstName() );
+        employeeDto.setLastName( employee.getLastName() );
+        employeeDto.setBirthDate( employee.getBirthDate() );
+        employeeDto.setAddress( employee.getAddress() );
+        employeeDto.setGender( employee.getGender() );
+        employeeDto.setSalary( employee.getSalary() );
+        employeeDto.setAge( employee.getAge() );
+        employeeDto.setVacationBalance( employee.getVacationBalance() );
+        employeeDto.setManagerName( employee.getManagerName() );
+        employeeDto.setDepartmentName( employee.getDepartmentName() );
+        employeeDto.setJobTitle( employee.getJobTitle() );
+        employeeDto.setManagerId( employee.getManagerId() );
+        employeeDto.setDepartmentId( employee.getDepartmentId() );
+        employeeDto.setJobId( employee.getJobId() );
 
         return employeeDto;
     }
@@ -113,7 +97,7 @@ public class EmployeeMapperImpl implements EmployeeMapper {
             employee.setLastName( employeeDto.getLastName() );
         }
         if ( employeeDto.getBirthDate() != null ) {
-            employee.setBirthDate( Date.from( employeeDto.getBirthDate().atStartOfDay( ZoneOffset.UTC ).toInstant() ) );
+            employee.setBirthDate( employeeDto.getBirthDate() );
         }
         if ( employeeDto.getAddress() != null ) {
             employee.setAddress( employeeDto.getAddress() );
@@ -138,6 +122,15 @@ public class EmployeeMapperImpl implements EmployeeMapper {
         }
         if ( employeeDto.getJobTitle() != null ) {
             employee.setJobTitle( employeeDto.getJobTitle() );
+        }
+        if ( employeeDto.getManagerId() != null ) {
+            employee.setManagerId( employeeDto.getManagerId() );
+        }
+        if ( employeeDto.getDepartmentId() != null ) {
+            employee.setDepartmentId( employeeDto.getDepartmentId() );
+        }
+        if ( employeeDto.getJobId() != null ) {
+            employee.setJobId( employeeDto.getJobId() );
         }
 
         return employee;

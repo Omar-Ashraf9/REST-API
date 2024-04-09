@@ -1,5 +1,6 @@
 package gov.iti.jets.Services;
 
+import gov.iti.jets.Exceptions.ResourceNotFoundException;
 import gov.iti.jets.Models.DTO.ProjectDto;
 import gov.iti.jets.Models.Mappers.ProjectMapper;
 import gov.iti.jets.Persistence.DB;
@@ -24,7 +25,7 @@ public class ProjectService {
     public ProjectDto getProjectById(Integer id) {
         return DB.doInTransaction(em -> {
             ProjectRepo projectRepo = new ProjectRepo(em);
-            Project project = projectRepo.findById(id).orElse(null);
+            Project project = projectRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("No project found with the provided ID"));
             return ProjectMapper.INSTANCE.toDto(project);
         });
     }

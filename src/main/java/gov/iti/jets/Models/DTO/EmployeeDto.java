@@ -3,6 +3,9 @@ package gov.iti.jets.Models.DTO;
 import jakarta.json.bind.annotation.JsonbDateFormat;
 import jakarta.json.bind.annotation.JsonbPropertyOrder;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.Value;
 
 import java.io.Serializable;
@@ -13,7 +16,9 @@ import java.util.Date;
 /**
  * DTO for {@link gov.iti.jets.Persistence.Entities.Employee}
  */
-@Value
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonbPropertyOrder({"id", "firstName", "lastName", "birthDate", "address", "gender", "salary",
         "age", "vacationBalance", "managerName", "departmentName", "jobTitle"})
 public class EmployeeDto implements Serializable {
@@ -34,4 +39,7 @@ public class EmployeeDto implements Serializable {
     String managerName;
     String departmentName;
     String jobTitle;
+    Integer managerId;
+    Integer departmentId;
+    Integer jobId;
 }

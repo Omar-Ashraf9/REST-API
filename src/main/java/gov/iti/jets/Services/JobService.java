@@ -1,5 +1,6 @@
 package gov.iti.jets.Services;
 
+import gov.iti.jets.Exceptions.ResourceNotFoundException;
 import gov.iti.jets.Models.DTO.JobDto;
 import gov.iti.jets.Models.Mappers.JobMapper;
 import gov.iti.jets.Persistence.DB;
@@ -23,7 +24,7 @@ public class JobService {
     public JobDto getJobById(Integer id) {
         return DB.doInTransaction(em -> {
             JobRepo jobRepo = new JobRepo(em);
-            Job job = jobRepo.findById(id).orElse(null);
+            Job job = jobRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("No job found with the provided ID"));
             return JobMapper.INSTANCE.toDto(job);
         });
     }
@@ -45,7 +46,7 @@ public class JobService {
     public void deleteJob(Integer id) {
         DB.doInTransactionWithoutResult(em -> {
             JobRepo jobRepo = new JobRepo(em);
-            Job job = jobRepo.findById(id).orElse(null);
+            Job job = jobRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("No job found with the provided ID"));
             if (job != null) {
                 job.setAvailable(false);
                 jobRepo.update(job);
@@ -56,7 +57,18 @@ public class JobService {
     public boolean updateJob(JobDto jobDto){
         return DB.doInTransaction(em ->{
             JobRepo jobRepo = new JobRepo(em);
-            Job job = JobMapper.INSTANCE.toEntity(jobDto);
+            Job job = jobRepo.findById(jobDto.getId()).orElseThrow(() -> new ResourceNotFoundException("No job found with the provided ID"));
+
+            if (jobDto.getJobTitle() != null) {
+                job.setJobTitle(jobDto.getJobTitle());
+            }
+            if (jobDto.getMinSalary() != null) {
+                job.setMinSalary(jobDto.getMinSalary());
+            }
+            if (jobDto.getMaxSalary() != null) {
+                job.setMaxSalary(jobDto.getMaxSalary());
+            }
+
             try{
                 jobRepo.update(job);
                 return true;

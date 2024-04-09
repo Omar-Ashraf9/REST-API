@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 
 
@@ -28,7 +29,7 @@ public class Employee {
     private String lastName;
 
     @Column(name = "birthDate")
-    private Date birthDate;
+    private LocalDate birthDate;
 
     @Size(max = 100)
     @Column(name = "address", length = 100)
@@ -68,13 +69,33 @@ public class Employee {
     @Transient
     private String jobTitle;
 
+    @Transient
+    private Integer managerId;
+
+    @Transient
+    private Integer departmentId;
+
+    @Transient
+    private Integer jobId;
+
     @PostLoad
     public void setInfo(){
         if(manager != null)
+        {
             managerName = manager.getFirstName() + " " + manager.getLastName();
+            managerId = manager.getId();
+        }
+
         if(department != null)
+        {
             departmentName = department.getDepartmentName();
+            departmentId = department.getId();
+        }
+
         if(job != null)
+        {
             jobTitle = job.getJobTitle();
+            jobId = job.getId();
+        }
     }
 }

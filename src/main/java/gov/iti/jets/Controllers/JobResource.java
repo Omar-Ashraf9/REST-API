@@ -28,9 +28,6 @@ public class JobResource {
     public Response getJobById(@PathParam("id") Integer id) {
         JobService jobService = new JobService();
         JobDto job = jobService.getJobById(id);
-        if (job == null) {
-            return Response.status(Response.Status.NOT_FOUND).entity("No job found with the provided ID").build();
-        }
         return Response.ok(job).build();
     }
 

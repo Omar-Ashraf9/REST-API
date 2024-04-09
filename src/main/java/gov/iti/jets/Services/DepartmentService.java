@@ -1,5 +1,6 @@
 package gov.iti.jets.Services;
 
+import gov.iti.jets.Exceptions.ResourceNotFoundException;
 import gov.iti.jets.Models.DTO.DepartmentDto;
 import gov.iti.jets.Models.Mappers.DepartmentMapper;
 import gov.iti.jets.Persistence.DB;
@@ -27,7 +28,7 @@ public class DepartmentService {
     public DepartmentDto getDepartmentById(Integer id) {
         return DB.doInTransaction(em -> {
             DepartmentRepo departmentRepo = new DepartmentRepo(em);
-            Department department = departmentRepo.findById(id).orElse(null);
+            Department department = departmentRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("No department found with the provided ID"));
             return DepartmentMapper.INSTANCE.toDto(department);
         });
     }

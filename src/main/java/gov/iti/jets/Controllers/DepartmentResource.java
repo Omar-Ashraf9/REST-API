@@ -29,9 +29,6 @@ public class DepartmentResource {
     public Response getDepartmentById(@PathParam("id") Integer id) {
         DepartmentService departmentService = new DepartmentService();
         DepartmentDto department = departmentService.getDepartmentById(id);
-        if (department == null) {
-            return Response.status(Response.Status.NOT_FOUND).entity("No department found with the provided ID").build();
-        }
         return Response.ok(department).build();
     }
 
