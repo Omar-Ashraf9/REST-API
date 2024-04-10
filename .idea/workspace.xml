@@ -10,29 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="266796ee-07ea-4aed-8551-775715920b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/Adapters/LocalDateAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/DepartmentWebService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/EmployeeWebService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/JobWebService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/ProjectWebService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-jaxws.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/DepartmentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/DepartmentResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/DepartmentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/DepartmentDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/EmployeeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/EmployeeDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/EmployeeDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/lib/jakarta.xml.bind-api-3.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/JobMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/JobMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/ProjectMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/ProjectMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +231,9 @@
       <workItem from="1712658928031" duration="11426000" />
       <workItem from="1712672262262" duration="6107000" />
       <workItem from="1712689343057" duration="4817000" />
-      <workItem from="1712743402786" duration="6109000" />
+      <workItem from="1712743402786" duration="6489000" />
+      <workItem from="1712751198269" duration="416000" />
+      <workItem from="1712761312264" duration="4102000" />
     </task>
     <servers />
   </component>

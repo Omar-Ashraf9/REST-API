@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
 
 /**
  * DTO for {@link gov.iti.jets.Persistence.Entities.Department}
