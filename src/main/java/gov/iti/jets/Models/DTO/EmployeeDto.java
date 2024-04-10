@@ -1,8 +1,13 @@
 package gov.iti.jets.Models.DTO;
 
+import gov.iti.jets.Soap.Adapters.LocalDateAdapter;
 import jakarta.json.bind.annotation.JsonbDateFormat;
 import jakarta.json.bind.annotation.JsonbPropertyOrder;
 import jakarta.validation.constraints.Size;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,6 +26,8 @@ import java.util.Date;
 @NoArgsConstructor
 @JsonbPropertyOrder({"id", "firstName", "lastName", "birthDate", "address", "gender", "salary",
         "age", "vacationBalance", "managerName", "departmentName", "jobTitle"})
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class EmployeeDto implements Serializable {
     Integer id;
     @Size(max = 50)
@@ -28,6 +35,7 @@ public class EmployeeDto implements Serializable {
     @Size(max = 50)
     String lastName;
     @JsonbDateFormat("yyyy-MM-dd")
+    @XmlJavaTypeAdapter(LocalDateAdapter.class)
     LocalDate birthDate;
     @Size(max = 100)
     String address;

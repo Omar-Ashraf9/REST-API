@@ -48,7 +48,6 @@ public class DepartmentResource {
     @Path("/{departmentId}/manager")
     public Response assignManagerToDepartment(@PathParam("departmentId") Integer departmentId, DepartmentDto managerInfo) {
         DepartmentService departmentService = new DepartmentService();
-        System.out.println(managerInfo.getManagerStartDate());
         boolean isAssigned = departmentService.assignManagerToDepartment(departmentId, managerInfo);
         if (isAssigned) {
             return Response.status(Response.Status.OK).entity("Manager assigned to the department successfully").build();
