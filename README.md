@@ -28,9 +28,17 @@ This repository contains a RESTful API for managing employee, department, projec
   - `DELETE /jobs/{id}`: Delete a job position by ID.
   - `GET /jobs/search`: Search for job positions based on specific criteria.
 
-## API Documentation 📖
-https://documenter.getpostman.com/view/10820115/2sA3BgAFU9
+## SOAP API (Testing Phase) 🏭
+In addition to the RESTful endpoints, we have recently introduced SOAP API endpoints for testing purposes within this project. These SOAP endpoints are available alongside the RESTful implementation. 
 
+## Transition to Standalone Projects 🔄
+**Upcoming Changes**: We are planning to refactor this project into two standalone projects:
+1. **HR RESTful Service**: A dedicated project focusing solely on the RESTful API implementation.
+2. **HR SOAP Service**: A separate project specifically for the SOAP API endpoints.
+
+## API Documentation 📖
+  - You can explore the [SOAP documentation](https://documenter.getpostman.com/view/10820115/2sA3BgBvRM) for details on how to interact with these endpoints.
+  - You can explore the [REST documentation](https://documenter.getpostman.com/view/10820115/2sA3BgAFU9) for details on how to interact with these endpoints.
 
 ## Technologies Used 🛠️
 ![Java JDK](https://img.shields.io/badge/Java%20JDK-17-orange?style=for-the-badge&logo=java)
