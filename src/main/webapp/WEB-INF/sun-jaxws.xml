@@ -1,0 +1,17 @@
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+    <endpoint name="JobWebService" implementation="gov.iti.jets.Soap.JobWebService"
+              url-pattern="/HRSOAP/jobs">
+    </endpoint>
+
+    <endpoint name="ProjectWebService" implementation="gov.iti.jets.Soap.ProjectWebService"
+              url-pattern="/HRSOAP/projects">
+    </endpoint>
+
+    <endpoint name="DepartmentWebService" implementation="gov.iti.jets.Soap.DepartmentWebService"
+              url-pattern="/HRSOAP/departments">
+    </endpoint>
+
+    <endpoint name="EmployeeWebService" implementation="gov.iti.jets.Soap.EmployeeWebService"
+              url-pattern="/HRSOAP/employees">
+    </endpoint>
+</endpoints>

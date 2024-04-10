@@ -10,18 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="266796ee-07ea-4aed-8551-775715920b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/gov/iti/jets/Controllers/DepartmentResourceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gov/iti/jets/Controllers/ProjectResourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/Adapters/LocalDateAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/DepartmentWebService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/EmployeeWebService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/JobWebService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Soap/ProjectWebService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-jaxws.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/EmployeeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/EmployeeResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/ProjectDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/ProjectDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/ProjectDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/ProjectDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/DepartmentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Controllers/DepartmentResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/DepartmentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/DepartmentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/Models/DTO/EmployeeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/EmployeeDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/classes/gov/iti/jets/Models/DTO/EmployeeDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/lib/jakarta.xml.bind-api-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/REST-API/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/REST-API/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/Models/DTO/DepartmentDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/DepartmentMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/EmployeeMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/JobMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/JobMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/ProjectMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/gov/iti/jets/Models/Mappers/ProjectMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,46 +81,46 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DBpopulator.executor": "Run",
-    "HTTP Request.generated-requests | #3.executor": "Run",
-    "JUnit.DepartmentResourceTest.testAddDepartment.executor": "Run",
-    "JUnit.DepartmentResourceTest.testDeleteDepartment.executor": "Run",
-    "JUnit.DepartmentResourceTest.testGetAllDepartments.executor": "Run",
-    "JUnit.DepartmentResourceTest.testGetDepartmentById.executor": "Run",
-    "JUnit.JobResourceTest.testAddJob.executor": "Run",
-    "JUnit.JobResourceTest.testGetAllJobs.executor": "Run",
-    "JUnit.JobResourceTest.testGetJobById.executor": "Run",
-    "JUnit.JobResourceTest.testSearchJobs.executor": "Run",
-    "JUnit.ProjectResourceTest.testDeleteProject.executor": "Run",
-    "JUnit.ProjectResourceTest.testGetAllProjects.executor": "Run",
-    "JUnit.ProjectResourceTest.testGetProjectById.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Rest.executor": "Run",
-    "git-widget-placeholder": "employee",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/ITI - EWD/Courses/Projects/REST-API/src/main/java/gov/iti/jets/Exceptions",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DBpopulator.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepartmentResourceTest.testAddDepartment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepartmentResourceTest.testDeleteDepartment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepartmentResourceTest.testGetAllDepartments.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepartmentResourceTest.testGetDepartmentById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobResourceTest.testAddJob.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobResourceTest.testGetAllJobs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobResourceTest.testGetJobById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobResourceTest.testSearchJobs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProjectResourceTest.testDeleteProject.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProjectResourceTest.testGetAllProjects.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProjectResourceTest.testGetProjectById.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Rest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;soap-creation&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/ITI - EWD/Courses/Projects/REST-API/src/main/java/gov/iti/jets/Exceptions&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ITI - EWD\Courses\Projects\REST-API\src\main\java\gov\iti\jets\Exceptions" />
@@ -241,6 +252,7 @@
       <workItem from="1712658928031" duration="11426000" />
       <workItem from="1712672262262" duration="6107000" />
       <workItem from="1712689343057" duration="4817000" />
+      <workItem from="1712743402786" duration="6109000" />
     </task>
     <servers />
   </component>
